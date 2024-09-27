@@ -209,7 +209,7 @@ footer{
     background-color: black;
     color: aliceblue;
     text-align: center;
-
+}
 /* RESPONSIVO //////////////////////////////////////////////////////////////*/
 @media(max-width:800px){
     .redes{
