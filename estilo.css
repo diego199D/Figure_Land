@@ -1,0 +1,246 @@
+/* Fuentes*/
+@font-face {
+    font-family: poppins-bold;
+    src: url(fuentes/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(fuentes/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-extra;
+    src: url(fuentes/Poppins-ExtraBold.ttf);
+}
+/* Variables */
+:root{
+    --titulos: poppins-bold;
+    --normal: poppins;
+    --fuente-ico: Poppins-extra;
+    --color-azul: rgb(3, 126, 248);
+} 
+/* ----------------------------------------------------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    padding: 1px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.ico{
+    margin-left:10px;
+    width: 40px;
+}
+.icoP{
+    margin-left:18px;
+    width: 30px;
+
+}
+.logo{
+    font-family: var(--fuente-ico);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: aliceblue;
+    font-size: 10px;
+}
+
+.enlaces {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.enlaces a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 18px;
+    font-family: var(--fuente-ico);
+
+}
+
+.enlaces a:hover{
+    color: var(--color-azul);
+}
+
+#home{
+    color: var(--color-azul);
+}
+
+
+/* HEADER---------------------------------------- */
+header{
+    background-image: url(imagenes/fondo_header.jpg);
+    padding-bottom: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido-header{
+    font-size: 30px;
+    color: rgb(225, 230, 245);
+    font-family: poppins-extra;
+    text-align: center;
+    padding-top: 300px;
+}
+.contenido-header h3{
+    color:rgb(63, 63, 64);
+    font-family: var(--normal);
+}
+
+/* TARGETAS */
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+.productos h2{
+    font-family: var(--titulos);
+    font-size: 30px;
+    text-align: center;
+}
+
+.targetas img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.targetas{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.targeta1{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+    border:solid rgb(3, 126, 248);
+    border-radius: 30px;   
+}
+.targeta2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+    border:solid rgb(3, 126, 248);
+    border-radius: 30px;
+}
+.targeta3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+    border:solid rgb(3, 126, 248);
+    border-radius: 30px;
+}
+.targeta4{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+    border:solid rgb(3, 126, 248);
+    border-radius: 30px;
+}
+.targetas p{
+    font-family: var(--normal);
+    font-size: 15px;
+}
+
+
+/* PARTE DE TRABAJO INFORMACIOJN ----------------------*/
+.informacion{
+    display: flex;
+    flex-direction: row;
+    margin: 200px 0px;
+
+}
+
+.ejemplo img{
+    width: 100%;
+    height: 100%;
+}
+.ejemplo{
+    width: 50%;
+}
+
+.trabajo-letras{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    font-family: var(--normal);
+    justify-content: center;
+    padding: 5%;
+    align-items: center;
+}
+.trabajo-letras p{
+    margin-bottom: 40px;
+}
+.btn a{
+    text-decoration: none;
+    color:aliceblue;
+    background-color: var(--color-azul);
+    padding: 9px 30px;
+    border: solid black;
+    border-radius: 20px;
+}
+.btn a:hover{
+    background-color: darkgoldenrod;
+    color: black;
+    border-color: black;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+/* RESPONSIVO //////////////////////////////////////////////////////////////*/
+@media(max-width:800px){
+    .redes{
+        display: none;
+    }
+    .enlaces a{
+        font-size: 15px;
+        padding: 1% 10%;
+    }
+    .letra-logo{
+        display: none;
+    }
+    .logo img{
+        margin: 0px;
+    }
+    nav{
+        justify-content: center;
+        justify-content: flex-start;
+    }
+
+    .contenido-header{
+        font-size: 25px;
+    }
+/* INFORMACIONES--------------------------- */
+    .informacion{
+        flex-direction: column;
+        margin: 100px 0px;
+    }
+    .ejemplo{
+        width: 100%;
+    }
+    .trabajo-letras{
+        width: 90%;
+    }
+}
